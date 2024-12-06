@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "3c9ac8d5-3787-42d1-885a-165a7daa9a98",
+		"name": "bccChat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38371038"
+	},
+	"item": [
+		{
+			"name": "history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/chat/history?room_id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat",
+						"history"
+					],
+					"query": [
+						{
+							"key": "room_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"room_id\": \"2\",\r\n        \"username\": \"2\",\r\n        \"content\": \"6\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/chat/message",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat",
+						"message"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
